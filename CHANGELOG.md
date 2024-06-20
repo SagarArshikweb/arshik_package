@@ -1,2 +1,2 @@
-## 0.0.2
-* Second flutter packages for testing purpose only.
+## 0.0.1
+* First flutter packages for testing purpose only.
