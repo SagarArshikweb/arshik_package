@@ -1,39 +1,65 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# Fancy Containers
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Fancy container package lets you add a beautiful gradient container to your Flutter app.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Installation
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
+```yaml
+dependencies:
+  flutter_package: ^0.0.2
+```
+2. Import the package and use it in your Flutter App.
 ```dart
-const like = 'sample';
+import 'package:flutter_package/flutter_package.dart';
 ```
 
-## Additional information
+## Example
+There are a number of properties that you can modify:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+-  height
+- width
+- title
+- subtitle
+- gradient (color1 and color2)
+
+<hr>
+
+<table>
+<tr>
+<td>
+
+```dart
+class FancyScreen extends StatelessWidget {  
+  const FancyScreen({Key? key}) : super(key: key);  
+  
+  @override  
+  Widget build(BuildContext context) {  
+    return Scaffold(  
+      body: Center(  
+        child: const FancyContainer(  
+          title: 'Hello World',  
+          color1: Colors.lightGreenAccent,  
+          color2: Colors.lightBlue,  
+          subtitle: 'This is a new package',  
+        ),  
+      ),  
+    );  
+  }  
+}
+```
+
+</td>
+</tr>
+</table>
+
+## Next Goals
+
+- [x] Add onTap for functions.
+  Now, you can specify the onTap and specify a function.
+
+- [x] Change font and color style for text.
+  Change color by specifying `textcolor` and `subtitlecolor` properties.
+
+- [ ] Add more containers to the package.
