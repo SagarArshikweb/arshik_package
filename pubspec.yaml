@@ -1,7 +1,7 @@
 name: flutter_package
 description: "A new Flutter project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/SagarArshikweb/flutter_package
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
