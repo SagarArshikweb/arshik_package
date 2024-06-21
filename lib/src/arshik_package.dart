@@ -1,5 +1,5 @@
+import 'package:arshik_package/src/utils/fancy_containers_typedef.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_package/src/utils/fancy_containers_typedef.dart';
 
 class FancyContainer extends StatefulWidget {
   const FancyContainer({
